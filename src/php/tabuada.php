@@ -16,24 +16,24 @@
 </head>
 <body>
     <?php
-        $nome = "Maicol do SENAI";
         $resultado = (2+1) * 5;
-        
+
         echo("
-            Linha 1
-            <br>
-            Linha 2
-            <br>
-            Meu nome é $nome
-            <br>
             O resultado foi:
             <br>
         ");
 
+        $valor = $_POST["valor"];
+
         for($x=1; $x<=10; $x++) {
+            if($x%2 == 0) {
             echo("<div class='verde'>");
-            echo(5*$x);
+            } else {
+                echo("<div class='amarelo'>");
+            }
+            echo($valor*$x);
             echo("</div>");
+            
         }
     ?>
 </body>
