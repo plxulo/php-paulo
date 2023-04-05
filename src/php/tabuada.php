@@ -19,11 +19,13 @@
         $resultado = (2+1) * 5;
 
         echo("
-            O resultado foi:
+            Seu nome é:
             <br>
         ");
 
         $valor = $_POST["valor"];
+        $nome = $_POST["nome"];
+        echo($nome);
 
         for($x=1; $x<=10; $x++) {
             if($x%2 == 0) {
@@ -33,7 +35,6 @@
             }
             echo($valor*$x);
             echo("</div>");
-            
         }
     ?>
 </body>
